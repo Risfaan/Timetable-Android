@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="7dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/day_cv"
+                    android:text="Day"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20sp"
+                    android:src="@drawable/ic_time" />
+
+
+                <TextView
+                    android:id="@+id/start_end"
+                    android:layout_width="210sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Start - End"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/delete_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:src="@drawable/ic_delete" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/sub_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Subject"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/teacher_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Teacher"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/class_num_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Class Number"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/id_c"
+                android:layout_width="210sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                android:textAlignment="center"
+                android:textSize="2sp" />
+
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+

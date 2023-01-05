@@ -1,0 +1,37 @@
+String query1 = "CREATE TABLE IF NOT EXISTS tt_class " +
+                "(class_id INT(50) PRIMARY KEY AUTOINCREMENT, " +
+                "subject VARCHAR(50) NOT NULL, " +
+                "teacher VARCHAR(50) NOT NULL, " +
+                "room VARCHAR(50) NOT NULL, " +
+                "class_from VARCHAR(50) NOT NULL, " +
+                "class_to VARCHAR(50) NOT NULL, " +
+                "day VARCHAR(10) NOT NULL);";
+        db.execSQL(query1);
+
+        String query2 = "CREATE TABLE IF NOT EXISTS tt_exam(" +
+                "exam_id INT(50) PRIMARY KEY AUTOINCREMENT, " +
+                "subject VARCHAR(50) NOT NULL, " +
+                "room VARCHAR(50) NOT NULL, " +
+                "class_from VARCHAR(50) NOT NULL, " +
+                "class_to VARCHAR(50) NOT NULL," +
+                "exam_date VARCHAR(20) NOT NULL);";
+        db.execSQL(query2);
+
+        String query3 = "CREATE TABLE IF NOT EXISTS tt_assignment(" +
+                "ass_id INT(50) PRIMARY KEY AUTOINCREMENT, " +
+                "subject VARCHAR(50) NOT NULL, " +
+                "title VARCHAR(50) NOT NULL, " +
+                "weightage VARCHAR(50) NOT NULL, " +
+                "description VARCHAR(50) NOT NULL, " +
+                "assignment_date VARCHAR(20) NOT NULL);";
+        db.execSQL(query3);
+
+        String query4 = "CREATE TABLE IF NOT EXISTS tt_teacher(" +
+                "teacher_id INT(50) PRIMARY KEY AUTOINCREMENT, " +
+                "name VARCHAR(50) NOT NULL, " +
+                "post VARCHAR(50) NOT NULL, " +
+                "phone VARCHAR(50) NOT NULL, " +
+                "email VARCHAR(50) NOT NULL, " +
+                "office VARCHAR(100) NOT NULL);";
+        db.execSQL(query4);
+    }
